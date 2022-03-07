@@ -1,0 +1,77 @@
+<%- include('./partials/header')%>
+  
+  <!-- MAIN -->
+  <main>
+    <div class="main-login">
+      <div class="left-login">
+        <h1>Faça login <br />E entre para <span> Wikiflix</span></h1>
+        <img src="/images/animation-cine.svg" class="left-login-img" alt="" />
+      </div>
+      <div class="right-login">
+        <div class="card-login">
+          <h1>LOGIN</h1>
+          <div class="textfield">
+            <label for="usuario">Usuário</label>
+            <input type="text" name="usuario" placeholder="Usuário" />
+          </div>
+          <div class="textfield">
+            <label for="senha">Senha</label>
+            <input type="password" name="senha" placeholder="senha" />
+
+            <!-- Link de recuperar a senha -->
+
+            <a class="forgot-password">
+              Esqueci a Senha
+            </a>
+
+            <a class="signUp">
+              Cadastre-se
+            </a>
+            <a href="/catalog" class="btn-login" >Login</a>
+
+    <!-- MODAL FORGOT -->
+    <div id="modal-forgot" class="modal-container">
+      <div class="modal">
+        <button class="close">x</button>
+        <h2>Insira seu endereço de e-mail</h2>
+        <h4>Para recuperar sua senha, precisamos do endereço de e-mail vinculado à sua conta.</h4>
+        <form action="">
+          <input type="text" class="modal-input" placeholder="Digite seu Email">
+          <button class="btn-modal">Recuperar Senha</button>
+          <!-- <input type="button" class="btn-modal" value="Recuperar Senha"> -->
+        </form>
+      </div>
+    </div>
+  
+  <!-- MODAL SIGN UP -->
+  
+    <div id="modal-signUp" class="modal-container">
+      <div class="modal">
+        <form action="">
+          <h2>Cadastre-se!</h2>
+          <button class="close">x</button>
+          <div>
+            <input type="text" id="usuario" placeholder="Usuário" class="modal-input-signUp">
+            <input type="text" id="nome" placeholder="Nome Completo" class="modal-input-signUp">
+            <input type="date" id="data-de-nascimento" placeholder="Data de Nascimento" class="modal-input-signUp"> <br />
+            <input type="email" id="email" placeholder="Email" class="modal-input-signUp">
+            <input type="password" id="senha" placeholder="Crie uma senha" class="modal-input-signUp">
+            <input type="password" id="confirmeSenha" placeholder="Confirme a senha" class="modal-input-signUp">
+          </div>
+          <button class="btn-modal" onclick="toggle()">enviar</button>
+  
+  
+        </form>
+    </div>
+    </div>
+  </main>
+  <%- include('./partials/footer') %>
+  
+    <!-- js -->
+    <script src="/javascripts/mainLogin.js">
+  
+  
+  
+  
+    </script>
+
